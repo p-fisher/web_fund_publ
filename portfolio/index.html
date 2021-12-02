@@ -9,19 +9,22 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 /*     table, tr, th {
-        border: 0,1,1,0 solid black;
+        border-right: 1px solid black;
         border-collapse: collapse;
+    }
+ *//*     h1 {
+        color: red;
     }
  */</style>
 </head>
 <body>
     <div>
-        <p><h1>Patrick Fisher</h1></p>
+        <h1>Patrick Fisher</h1>
         <p><img src="img/avatar.png" alt="avatar icon" width="54" height="54"></p>
         <p><img src="img/github.png" alt="github logo" height="27"><a href="https://github.com/p-fisher"> my github</a>&nbsp;&nbsp;<img src="img/linkedin.png" alt="linkedin logo" height="24"><a href="https://www.linkedin.com/in/pfisherok/"> my linkedin</a>&nbsp;&nbsp;<img src="img/envelope.png" alt="envelope icon" height="24"><a href="mailto:#"> my email</a></p>
     </div>
     <div>
-        <p><h3>Web Technologies</h3></p>
+        <h3>Web Technologies</h3>
         <table style="width:40%">
             <tr style="text-align:left">
                 <th>Front-End</th>
@@ -53,6 +56,15 @@
             </tr>
         </table>
     </div>
+    <div>
+        <h3>Contact Me</h3>
+        <form action="../registration_form/ThankYou.html" method="post"></form>
+        <label>Name:&nbsp;&nbsp;</label><input type="text" name="Name"> 
+        <label>Email:&nbsp;&nbsp;</label><input type="text" name="Email">
+        <p>Message:<br>
+            <textarea name="Message" cols="30" rows="4"></textarea>
+        <p><input type="submit" value="Send Message"></p>
+        </div>
 </body>
 
 </html>
