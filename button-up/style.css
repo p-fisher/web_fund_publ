@@ -1,0 +1,40 @@
+div {
+    margin-left:54px;
+    margin-bottom:12px;
+}
+#search-button{
+    background-color:lightgray;
+    border-radius: 20px;
+    font-size: 15px;
+    color:#377a54;
+    padding: 3px 20px;
+    border: seagreen;
+    border-style: solid;
+    border-width: 2px;
+    width:144px;
+    /* margin-left: 54px; */
+    margin-top: 54px;
+}
+#plus-button {
+    background-color: rgb(94, 160, 149);
+    border-radius: 20px;
+    border:0;
+    font-size:25px;
+    color:white;
+    width:36px;
+    height:36px;
+    /* margin-left:54px; */
+}
+#create-button {
+    background-color: rgb(72, 111, 218);
+    border:black;
+    border-width: 2px;
+    border-style: solid;
+    width:180px;
+    height:36px;
+    color: white;
+    font-size:18px;
+    /* font-weight: normal; */
+    box-shadow: 3px 3px 0 black;
+    /* margin-left:54px; */
+}
