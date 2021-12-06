@@ -30,7 +30,7 @@
 }
 #advertisement {
     height: 120px;
-    width: 670px;
+    width: 670px; /* seems like there should be a way to do this so it auto-adjusts to available width!! changing width using % or px seems like a cheat*/
     background-color: purple;
     margin-top:30px;
     margin-right: 20px;
