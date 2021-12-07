@@ -1,0 +1,46 @@
+div {
+    font-family: 'Roboto', sans-serif;
+    background-color: darkslategray;
+    padding-left:30px;
+    color: white;
+    align-items: center;
+    height: 54px;
+    margin:0 auto;
+    width: 1000px; 
+}
+a:link, .btn {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+a:visited {
+    color: gray;
+}
+a:hover {
+    color:white;
+}
+a:active {
+    color:gray;
+}
+.nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links {
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: 13px;
+    width: 40%;
+}
+.btn {
+    /* color: white; */
+    background-color: turquoise;
+    height: 27px;
+    width:72px;
+    box-shadow: 2px 2px 0 black;
+    font-size: 13px;
+}
