@@ -4,7 +4,7 @@
     display:flex;
 }
 .col {
-    flex: 4;
+    flex: 1;
     margin:10px;
     background-color: lightseagreen;
     align-items: center;
@@ -12,8 +12,14 @@
     /* position: relative; */
 }
 .col-2 {
-
+    flex:2;
+    margin:10px;
+    background-color: lightseagreen;
+    align-items: center;
 }
 .col-3 {
-
+    flex:3;
+    margin:10px;
+    background-color: lightseagreen;
+    align-items: center;
 }
