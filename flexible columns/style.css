@@ -1,0 +1,19 @@
+.row {
+    height: 72px;
+    color: white;
+    display:flex;
+}
+.col {
+    flex: 4;
+    margin:10px;
+    background-color: lightseagreen;
+    align-items: center;
+    /* vertical-align: middle; */
+    /* position: relative; */
+}
+.col-2 {
+
+}
+.col-3 {
+
+}
