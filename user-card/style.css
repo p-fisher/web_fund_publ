@@ -14,14 +14,11 @@
     height:350px;
     margin:50px auto;
     vertical-align: middle;
-    /* position:absolute;
-    top:auto; */
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Readex Pro', sans-serif;
 }
 .topbar {
     background-color: lightseagreen;
     height:54px;
-    /* border: 2px solid aqua; */
 }
 #avatar {
     height:54px;
@@ -29,20 +26,36 @@
     position:relative;
     top:-50px;
     margin-bottom: -50px;
-    }
+    margin-left:12px;
+}
+h1 {
+    margin-top:-15px;
+}
+/* h3 {
+    margin-left:0;
+} */
 .content {
     padding:25px;
-    /* position:relative;
-    top:-50px; */
     border-left: 3px solid lightgray;
     border-bottom: 3px solid lightgray;
     border-right: 3px solid lightgray;
 }
+.location, .info, .profile {
+    margin:8px 0 0 8px;
+}
+.location {
+    font-size: 95%;
+}
+.info, .profile {
+    font-size: 80%;
+}
 #map_point {
-    height:18px;
-    margin-right:12px;
+    height:20px;
+    margin:0 12px 0 2px;
 }
 #gear {
     height:16px;
-    margin-right:12px;
+    margin-right:8px;
+    position:relative;
+    /* top: 2px; */
 }

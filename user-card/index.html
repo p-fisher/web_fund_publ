@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Card</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap" rel="stylesheet"></head>
 <body>
     <div class="container">
         <div class="topbar"></div>
         <div class="content">
-            <img id="avatar" src="img/user-circle.png">
+            <div><img id="avatar" src="img/user-circle.png" alt="avatar icon">
             <h1>Jane Doe</h1>
-            <img id="map_point" src="img/map-marker.png">Seattle
-            <p>Developer | Engineer | Problem Solver</p>
+        </div>
+        <div class="location"><img id="map_point" src="img/map-marker.png" alt="map pointer icon">Seattle</div>
+        <div class="info"><p>Developer | Engineer | Problem Solver</p>
             <p>Master of shadows and the internet!</p>
-            <img id="gear" src="img/gear.png"><a href="#">edit profile</a></div>
+        </div>
+        <div class="profile"><img id="gear" src="img/gear.png" alt="gear icon"><a href="#">edit profile</a></div>
         </div>
     </div>
 </body>
