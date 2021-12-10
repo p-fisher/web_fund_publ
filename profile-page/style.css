@@ -8,65 +8,31 @@
     outline: 0;
     padding: 0;
     margin: 0;
+    font-family: 'Readex Pro', sans-serif; /* added to base css reset for this page */
     }
 .container {
-    width:500px;
-    height:350px;
-    margin:50px auto;
-    vertical-align: middle;
-    font-family: 'Readex Pro', sans-serif;
+    width:750px;
+    height:700px;
+    margin: 0 auto;
+    position: relative;
+    top: -70px;
+    /* vertical-align: middle; */
 }
-.topbar {
-    background-color: lightseagreen;
-    height:54px;
+.page-topbar{
+    height:60px;
+    background-color:black;
+    width:100%;
+    margin-bottom: 30px;
+    display:flex;
 }
-#avatar {
-    height:54px;
-    /* border-style: solid black; */
-    position:relative;
-    top:-50px;
-    margin-bottom: -50px;
-    margin-left:12px;
+.page-nav {
+    color:white;
+    display:flex;
+    align-items:center;
+    /* padding:0 20px; */
+    margin-bottom: 50px;
 }
-h1 {
-    margin-top:-15px;
-}
-/* h3 {
-    margin-left:0;
-} */
-.content {
-    padding:25px;
-    border-left: 3px solid lightgray;
-    border-bottom: 3px solid lightgray;
-    border-right: 3px solid lightgray;
-}
-.location, .info, .profile {
-    margin:8px 0 0 8px;
-}
-.location {
-    font-size: 95%;
-}
-.info, .profile {
-    font-size: 80%;
-}
-#map_point {
-    height:20px;
-    margin:0 12px 0 2px;
-}
-#gear {
-    height:16px;
-    margin-right:8px;
-    position:relative;
-    /* top: 2px; */
-}
-.container {
-    width:500px;
-    height:350px;
-    margin:50px auto;
-    vertical-align: middle;
-    font-family: 'Readex Pro', sans-serif;
-}
-.topbar {
+.card-topbar {
     background-color: lightseagreen;
     height:54px;
 }
