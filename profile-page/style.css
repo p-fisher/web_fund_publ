@@ -10,28 +10,74 @@
     margin: 0;
     font-family: 'Readex Pro', sans-serif; /* added to base css reset for this page */
     }
-.container {
-    width:750px;
-    height:700px;
-    margin: 0 auto;
-    position: relative;
-    top: -70px;
-    /* vertical-align: middle; */
-}
-.page-topbar{
+.page-topbar {
     height:60px;
     background-color:black;
     width:100%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     display:flex;
 }
+.wrapper {
+    width:750px;
+    height:700px;
+    margin: 0 auto;
+    /* position: relative; */
+    margin-top:30px;
+    /* top: -70px; */
+    /* vertical-align: middle; */
+}
+
+/* ----------------------- navigation */
+
 .page-nav {
+    width:750px;
+    margin:0 auto;
     color:white;
     display:flex;
     align-items:center;
-    /* padding:0 20px; */
-    margin-bottom: 50px;
+    justify-content:space-between;
 }
+.nav-title, h1 {
+    font-size: 200%;
+    font-weight:bold;
+    /* top:14px;
+    margin-right: -150px;
+    display: flex; */
+}
+.nav-links {
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: 13px;
+    width: 40%;
+}
+.nav-links a:link, .nav-btn {
+    color: white;
+    text-decoration: none;
+    /* margin-right: 20px; */
+}
+.nav-links a:visited {
+    color: gray;
+}
+.nav-links a:hover {
+    color:white;
+}
+.nav-links a:active {
+    color:gray;
+}
+.nav-btn {
+    /* color: white; */
+    background-color: turquoise;
+    height: 27px;
+    width:72px;
+    box-shadow: 2px 2px 0 black;
+    font-size: 13px;
+}
+
+/* ----------------------- page body styling */
+
 .card-topbar {
     background-color: lightseagreen;
     height:54px;
