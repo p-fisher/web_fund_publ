@@ -39,7 +39,7 @@
 }
 .nav-title, h1 {
     font-size: 200%;
-    font-weight:bold;
+    font-weight: 900;
     /* top:14px;
     margin-right: -150px;
     display: flex; */
@@ -51,7 +51,7 @@
     text-decoration: none;
     justify-content: space-between;
     font-size: 13px;
-    width: 40%;
+    width: 35%;
 }
 .nav-links a:link, .nav-btn {
     color: white;
@@ -59,10 +59,11 @@
     /* margin-right: 20px; */
 }
 .nav-links a:visited {
-    color: gray;
+    color: lightgray;
 }
 .nav-links a:hover {
     color:white;
+    font-weight: bold;
 }
 .nav-links a:active {
     color:gray;
@@ -74,6 +75,7 @@
     width:72px;
     box-shadow: 2px 2px 0 black;
     font-size: 13px;
+    margin-left: 35%;
 }
 
 /* ----------------------- page body styling */
