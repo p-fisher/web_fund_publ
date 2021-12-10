@@ -25,6 +25,8 @@
     margin-top:30px;
     /* top: -70px; */
     /* vertical-align: middle; */
+    display: flex;
+    justify-content: space-between;
 }
 
 /* ----------------------- navigation */
@@ -79,8 +81,11 @@
 }
 
 /* ----------------------- page body styling */
-
-.card-topbar {
+/* ---- my identity */
+.my-identity {
+    width:475px;
+}
+.my-topbar {
     background-color: lightseagreen;
     height:54px;
 }
@@ -98,7 +103,7 @@ h1 {
 /* h3 {
     margin-left:0;
 } */
-.content {
+.my-content {
     padding:25px;
     border-left: 3px solid lightgray;
     border-bottom: 3px solid lightgray;
@@ -122,4 +127,13 @@ h1 {
     margin-right:8px;
     position:relative;
     /* top: 2px; */
+}
+
+/* ---- connection requests */
+.requests {
+    width:250px;
+}
+.requests-topbar {
+    background-color: black;
+    height:54px;
 }
