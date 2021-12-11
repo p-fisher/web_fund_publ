@@ -87,9 +87,9 @@
 }
 .my-topbar {
     background-color: lightseagreen;
-    height:54px;
+    height:80px;
 }
-#avatar {
+#my-avatar {
     height:54px;
     /* border-style: solid black; */
     position:relative;
@@ -130,10 +130,35 @@ h1 {
 }
 
 /* ---- connection requests */
-.requests {
+
+.requests { /*CHECK THIS... NEEDED? */
     width:250px;
+    display:block;
 }
 .requests-topbar {
+    display: flex;
     background-color: black;
     height:54px;
+    color:white;
+    align-items:center;
+    padding: 0 15px;
+}
+.requests-content {
+    padding:15px 8px 15px 15px;
+    border-left: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+    border-right: 3px solid lightgray;
+    /* padding-bottom: 15px; */
+    /* display: block;
+    align-items: center; */
+    }
+.requests-new {
+    display:flex;
+    height: 54px;
+    align-items: center;
+    justify-content: space-between;
+}
+.others-avatar, .requests-yesno {
+    height: 30px;
+    margin-right:7px;
 }
