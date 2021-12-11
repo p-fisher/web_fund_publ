@@ -106,7 +106,6 @@ h1 {
     margin-left:0;
 } */
 .my-content {
-    /* display:block; */
     padding:25px;
     border-left: 3px solid lightgray;
     border-bottom: 3px solid lightgray;
@@ -136,7 +135,7 @@ h1 {
 
 .requests { /*CHECK THIS... NEEDED? */
     width:250px;
-    display:block;
+    /* display:block; */
 }
 .requests-topbar {
     display: flex;
