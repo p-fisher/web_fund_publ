@@ -14,12 +14,10 @@
     height:60px;
     background-color:black;
     width:100%;
-    /* margin-bottom: 30px; */
     display:flex;
 }
 .wrapper {
     width:750px;
-    /* height:700px; */
     height: auto;
     margin: 0 auto;
     margin-top:30px;
@@ -42,9 +40,6 @@
 .nav-title, h1 {
     font-size: 200%;
     font-weight: 900;
-    /* top:14px;
-    margin-right: -150px;
-    display: flex; */
 }
 .nav-links {
     display:flex;
@@ -148,9 +143,6 @@ h1 {
     border-left: 3px solid lightgray;
     border-bottom: 3px solid lightgray;
     border-right: 3px solid lightgray;
-    /* padding-bottom: 15px; */
-    /* display: block; */
-    /* align-items: center; */
     margin-bottom: 25px;
     }
 .requests-new {
