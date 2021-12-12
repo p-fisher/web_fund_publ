@@ -28,7 +28,6 @@
 }
 
 /* ----------------------- navigation */
-
 .page-nav {
     width:750px;
     margin:0 auto;
@@ -75,6 +74,7 @@
 }
 
 /* ----------------------- page body styling */
+
 /* ---- my identity */
 .my-identity {
     width:475px;
@@ -95,9 +95,6 @@
 h1 {
     margin-top:-15px;
 }
-/* h3 {
-    margin-left:0;
-} */
 .my-content {
     padding:25px;
     border-left: 3px solid lightgray;
@@ -125,7 +122,6 @@ h1 {
 }
 
 /* ---- connection requests */
-
 .requests {
     width:250px;
     margin-bottom: 25px;
@@ -178,8 +174,6 @@ h1 {
     border-bottom: 3px solid lightgray;
     border-right: 3px solid lightgray;
 }
-
-
 
 /* ---- my connections */
 .connections {
