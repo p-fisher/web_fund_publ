@@ -203,11 +203,14 @@ h1 {
 }
 .connections-content {
     padding:15px 8px 15px 15px;
-    /* padding:25px; */
+    /* padding-bottom: 0; */
     border-left: 3px solid lightgray;
     border-bottom: 3px solid lightgray;
     border-right: 3px solid lightgray;
 }
 .connections-list {
     height: 54px;
+}
+#connections-view-more {
+    height: 18px;
 }
