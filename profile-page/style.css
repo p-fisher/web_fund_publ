@@ -22,14 +22,11 @@
     /* height:700px; */
     height: auto;
     margin: 0 auto;
-    /* position: relative; */
     margin-top:30px;
-    /* top: -70px; */
-    /* vertical-align: middle; */
     display: flex;
     justify-content: space-between;
-    /* flex: 1; */
     flex-wrap: wrap;
+    align-items: top;
 }
 
 /* ----------------------- navigation */
@@ -74,7 +71,6 @@
     color:gray;
 }
 .nav-btn {
-    /* color: white; */
     background-color: lightseagreen;
     height: 27px;
     width:72px;
