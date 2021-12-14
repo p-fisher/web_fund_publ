@@ -11,7 +11,7 @@
     <div class="topbar">
         <div><h1>Dojonary</h1></div>
         <div><input type="text" placeholder="Search"></div>
-        <div><button class="button-navbar">Login</button></div>
+        <div><button class="button-navbar" onclick="changeText2(this)">Login</button></div>
     </div>    
     <div class="wrapper">
     <div>
@@ -20,7 +20,7 @@
                 <p class="box-head">ninja</p>
                 <p class="box-subhead">noun</p>
                 <p class="box-ital">Plural: ninjas</p>
-                <p><button class="button-like">13 likes</button></p>
+                <p><button class="button-like" onclick="alertNinja('practitioner')"><span id="practitioner">13</span> likes</button></p>
             </div>
             <div class="box-content-primary-right">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></div>
         </div>
@@ -29,14 +29,14 @@
                 <p class="box-head">ninja</p>
                 <p class="box-subhead">noun</p>
                 <p class="box-ital">Plural: ninjas</p>
-                <p><button class="button-like">37 likes</button></p>
+                <p><button class="button-like" onclick="alertNinja('programmer')"><span id="programmer">37</span> likes</button></p>
             </div>
             <div class="box-content-primary-right">A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</div>
         </div>
     </div>
     <div class="box-item-secondary">
         <p>Dojonary is defined by YOU</p>
-        <p><button class="button-definition">Add Definition</button></p>
+        <p><button class="button-definition" onclick="hideOnClick(this)">Add Definition</button></p>
     </div>
 
     </div>

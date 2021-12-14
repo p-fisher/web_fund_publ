@@ -41,6 +41,7 @@
     height: 25px;
     border: solid 1px black;
     margin-top: 15px;
+    cursor: pointer
     /* margin-bottom: 10px; */
 }
 .button-definition {
@@ -51,6 +52,7 @@
     height: 25px;
     border: solid 1px black;
     margin-top: 10px;
+    cursor: pointer;
 }
 .button-navbar {
     background-color: cornflowerblue;
@@ -61,6 +63,7 @@
     border: solid 1px black;
     padding: 0 10px;
     position: relative;
+    cursor: pointer;
     top: -2px; /* nudge upward due to shadow, for aesthetics */
 }
 .box-item-primary {
@@ -82,12 +85,12 @@
     text-align: center;
     width: 30%;
     margin-right: 20px;
-    border: solid 1px lightgreen
+    /* border: solid 1px lightgreen */
 }
 .box-content-primary-right {
     text-align: left;
     width: 60%;
-    border: solid 1px lightsalmon;
+    /* border: solid 1px lightsalmon; */
 }
 .box-head {
     font-size: 200%;
