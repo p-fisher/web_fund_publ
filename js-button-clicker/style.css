@@ -11,7 +11,7 @@
     margin: 0;
     }
 .topbar {
-    width: 622px;
+    width: 570px;
     background-color: lightgray;
     height: 54px;
     padding: 0 15px;
@@ -27,7 +27,7 @@
     padding: 0 10px;
 }
 .wrapper {
-    width: 650px;
+    width: 600px;
     margin: 0 auto;
     /* border: solid 1px lightgray; */
     display: flex;
@@ -40,8 +40,8 @@
     width: 60px;
     height: 25px;
     border: solid 1px black;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    /* margin-bottom: 10px; */
 }
 .button-definition {
     background-color: lightgreen;
@@ -51,7 +51,6 @@
     height: 25px;
     border: solid 1px black;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 .button-navbar {
     background-color: cornflowerblue;
@@ -65,19 +64,18 @@
     top: -2px; /* nudge upward due to shadow, for aesthetics */
 }
 .box-item-primary {
-    width: 390px;
+    width: 85%;
     border: solid 2px black;
-    padding: 10px;
+    padding: 15px;
     margin: 20px 0;
     display: flex;
     align-items: center;
-    /* text-align: center; */
 }
 .box-item-secondary {
-    width: 190px;
+    width: 25%;
     height:fit-content;
     border: solid 2px black;
-    padding: 10px;
+    padding: 20px;
     margin: 20px 0;
 }
 .box-content-primary-left {
@@ -85,23 +83,21 @@
     width: 30%;
     margin-right: 20px;
     border: solid 1px lightgreen
-    /* margin-bottom: 20px; */
 }
 .box-content-primary-right {
     text-align: left;
     width: 60%;
-    /* margin-right: 20px; */
     border: solid 1px lightsalmon;
-    /* margin-bottom: 20px; */
 }
 .box-head {
     font-size: 200%;
 }
 .box-subhead {
-    font-size: 120%;
+    font-size: 100%;
     font-style: italic;
+    margin: 5px 0;
 }
 .box-ital {
     font-style: italic;
-    font-size: 80%;
+    font-size: 75%;
 }
