@@ -129,9 +129,9 @@ h1 {
 .requests-topbar {
     display: flex;
     background-color: black;
-    height:54px;
-    color:white;
-    align-items:center;
+    height: 54px;
+    color: white;
+    align-items: center;
     padding: 0 15px;
 }
 .requests-content {
@@ -151,7 +151,14 @@ h1 {
     height: 30px;
     margin-right:7px;
 }
-
+.count {
+    background-color: lightgray;
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    font-weight: 800;
+    margin-right: 15px;
+}
 /* ---- education */
 .education {
     width:475px;
@@ -198,4 +205,6 @@ h1 {
 }
 #connections-view-more {
     height: 18px;
+    border-top: 3px solid lightgray;
+    padding-top: 12px;
 }
