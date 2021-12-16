@@ -31,11 +31,13 @@
 
 }
 .button-like {
-    width: 54px;
+    width: 60px;
     height: 36px;
     background-color: goldenrod;
     box-shadow: 3px 2px black;
     cursor: pointer;
+    font-size: 100%;
+    font-weight: 900;
 }
 
 
@@ -78,4 +80,9 @@
     display: flex;
     justify-content: space-between;
     /* width: 95%; */
+}
+.box-name {
+    font-size: 130%;
+    font-weight: 900;
+    width: 40%;
 }
