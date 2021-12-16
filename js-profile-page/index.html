@@ -31,13 +31,13 @@
         <div class="my-topbar"></div>
             <div class="my-content">
                 <div><img id="my-avatar" src="img/jane-d.jpg" alt="avatar icon">
-                    <h1>Jane Doe</h1>
+                    <h1 id="my-name">Jane Doe</h1>
                 </div>
             <div class="location"><img id="map_point" src="img/map-marker.png" alt="map pointer icon">Seattle</div>
             <div class="info"><p>Developer | Engineer | Problem Solver</p>
                 <p>Master of shadows and the internet!</p>
             </div>
-            <div class="profile"><img id="gear" src="img/gear.png" alt="gear icon"><a href="#">edit profile</a></div>
+            <div class="profile"><img id="gear" src="img/gear.png" alt="gear icon"><a href="#" onclick="editProfile('my-name')">edit profile</a></div>
             </div>
     </div>
     <!-- Education card --------------------->
@@ -92,5 +92,6 @@
     </div>
 </div>
 </div> <!--wrapper close -->
+<script src="script.js"></script>
 </body>
 </html>
