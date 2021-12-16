@@ -1,0 +1,201 @@
+* { /* Universal Reset from Jeff Starr */
+    vertical-align: top;
+    /* font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%; */
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Readex Pro', sans-serif; /* added to base css reset for this page */
+    }
+.page-topbar {
+    height:60px;
+    background-color:black;
+    width:100%;
+    display:flex;
+}
+.wrapper {
+    width:750px;
+    height: auto;
+    margin: 0 auto;
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap:wrap; */
+    /* vertical-align:top; */
+}
+
+/* ----------------------- navigation */
+.page-nav {
+    width:750px;
+    margin:0 auto;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.nav-title, h1 {
+    font-size: 200%;
+    font-weight: 900;
+}
+.nav-links {
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: 13px;
+    width: 35%;
+}
+.nav-links a:link, .nav-btn {
+    color: white;
+    text-decoration: none;
+    /* margin-right: 20px; */
+}
+.nav-links a:visited {
+    color: lightgray;
+}
+.nav-links a:hover {
+    color:white;
+    font-weight: bold;
+}
+.nav-links a:active {
+    color:gray;
+}
+.nav-btn {
+    background-color: lightseagreen;
+    height: 27px;
+    width:72px;
+    box-shadow: 2px 2px 0 black;
+    font-size: 13px;
+    margin-left: 35%;
+}
+
+/* ----------------------- page body styling */
+
+/* ---- my identity */
+.my-identity {
+    width:475px;
+    margin-bottom: 25px;
+}
+.my-topbar {
+    background-color: lightseagreen;
+    height:80px;
+}
+#my-avatar {
+    height:54px;
+    /* border-style: solid black; */
+    position:relative;
+    top:-50px;
+    margin-bottom: -50px;
+    margin-left:12px;
+}
+h1 {
+    margin-top:-15px;
+}
+.my-content {
+    padding:25px;
+    border-left: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+    border-right: 3px solid lightgray;
+}
+.location, .info, .profile {
+    margin:8px 0 0 8px;
+}
+.location {
+    font-size: 95%;
+}
+.info, .profile {
+    font-size: 80%;
+}
+#map_point {
+    height:20px;
+    margin:0 12px 0 2px;
+}
+#gear {
+    height:16px;
+    margin-right:8px;
+    position:relative;
+    /* top: 2px; */
+}
+
+/* ---- connection requests */
+.requests {
+    width:250px;
+    margin-bottom: 25px;
+}
+.requests-topbar {
+    display: flex;
+    background-color: black;
+    height:54px;
+    color:white;
+    align-items:center;
+    padding: 0 15px;
+}
+.requests-content {
+    padding:15px 8px 15px 15px;
+    border-left: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+    border-right: 3px solid lightgray;
+    margin-bottom: 25px;
+    }
+.requests-new {
+    display:flex;
+    height: 54px;
+    align-items: center;
+    justify-content: space-between;
+}
+.others-avatar, .requests-yesno {
+    height: 30px;
+    margin-right:7px;
+}
+
+/* ---- education */
+.education {
+    width:475px;
+}
+.date-range {
+    color:lightslategray;
+    margin: 7px 0 10px 0;
+}
+.education-topbar {
+    display: flex;
+    background-color: black;
+    height:54px;
+    color:white;
+    align-items:center;
+    padding: 0 15px;
+}
+.education-content {
+    padding:25px;
+    border-left: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+    border-right: 3px solid lightgray;
+}
+
+/* ---- my connections */
+.connections {
+    width:250px;
+}
+.connections-topbar {
+    display: flex;
+    background-color: black;
+    height:54px;
+    color:white;
+    align-items:center;
+    padding: 0 15px;
+}
+.connections-content {
+    padding:15px 8px 15px 15px;
+    border-left: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+    border-right: 3px solid lightgray;
+}
+.connections-list {
+    height: 54px;
+}
+#connections-view-more {
+    height: 18px;
+}
