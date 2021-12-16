@@ -3,7 +3,7 @@
     /* font-weight: inherit;
     font-family: inherit;
     font-style: inherit; */
-    font-size: 100%;
+    /* font-size: 100%; */
     border: 0 none;
     outline: 0;
     padding: 0;
@@ -11,11 +11,12 @@
     font-family: sans-serif;
     }
 .box {
-    width: 400px;
+    width: 440px;
     height: fit-content;
-    border: solid 2px black;
-    padding: 10px;
-    margin: 30px;
+    border: solid 3px black;
+    padding: 20px;
+    margin: 30px 0;
+    display: block;
 }
 .box-top {
     height: 54px;
@@ -35,4 +36,46 @@
     background-color: goldenrod;
     box-shadow: 3px 2px black;
     cursor: pointer;
+}
+
+
+/* start part II of exercise */
+.topbar {
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding: 0 15px;
+    line-height: 50px;
+   /* vertical-align: middle; */
+}
+.wrapper {
+    margin: 0 auto;
+    width: 700px;
+}
+.page-title {
+    text-align: center;
+    margin: 20px 0;
+}
+.my-id {
+    width: 140px;
+    height: fit-content;
+    border: solid 3px black;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: center;
+}
+.my-id div {
+    margin: 25px 0 0 0;
+}
+.my-id h2 {
+    margin-bottom: 10px;
+}
+#my-avatar {
+    width: 54px;
+    margin-bottom: 10px;
+}
+.page-content {
+    display: flex;
+    justify-content: space-between;
+    /* width: 95%; */
 }
