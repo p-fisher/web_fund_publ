@@ -150,6 +150,7 @@ h1 {
 .others-avatar, .requests-yesno {
     height: 30px;
     margin-right:7px;
+    cursor: pointer;
 }
 .count {
     background-color: lightgray;
