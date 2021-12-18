@@ -56,28 +56,191 @@ function cityAlert() {
 //     console.log(document.querySelector("#temp-choice").value);
 // }
 
-function selectedMeasure() {// this works in logging choice
+// function selectedMeasure() {// this works in logging choice
+//     var selected = document.querySelector("#temp-choice").value;
+//     if (selected === "°C") {
+//         console.log("Celsius is selected");
+//     } else {
+//         console.log("Farenheit is selected");
+//     }
+// }
+
+//now attempting to act based on whether C or F selected, including conversions and writeback
+function selectedMeasure() {// this works PER CHALLENGE but then the calculations get wonky because numbers change each time (challenge called)
     var selected = document.querySelector("#temp-choice").value;
-    if (selected === "°C") {
-        console.log("Celsius is selected");
-    } else {
-        console.log("Farenheit is selected");
-    }
+    if (selected === "°F") {
+        convertTempsToF();
+        }    // } else {
+    //     convertTempsToC();
+    // }
 }
 
 
-// looking at conversion
+
+
+// // looking at conversion
+// var allHighs = document.querySelectorAll(".temp-high");
+// var allLows = document.querySelectorAll(".temp-low");
+// var day1High = 0;
+// var day1Low = 0;
+// function convertTempsToF() { // this seems to work in testing for one day's values (haven't yet written back)
+//     day1High = Math.round(parseInt(allHighs[0].innerText) * 1.8 + 32);
+//     day1Low = Math.round(parseInt(allLows[0].innerText) * 1.8 + 32);
+//     // console.log(allHighs[0].innerText,allHighs[1].innerText,allHighs[2].innerText,allHighs[3].innerText);
+//     console.log(day1High,day1Low);
+// }
+
+// // looking at conversion
+// var allHighs = document.querySelectorAll(".temp-high");
+// var allLows = document.querySelectorAll(".temp-low");
+// var day1High = 0;
+// var day1Low = 0;
+// var day2High = 0;
+// var day2Low = 0;
+// var day3High = 0;
+// var day3Low = 0;
+// var day4High = 0;
+// var day4Low = 0;
+// function convertTempsToF() { // this seems to work in testing for all days' values (haven't yet written back)
+//     day1High = Math.round(parseInt(allHighs[0].innerText) * 1.8 + 32);
+//     day1Low = Math.round(parseInt(allLows[0].innerText) * 1.8 + 32);
+//     day2High = Math.round(parseInt(allHighs[1].innerText) * 1.8 + 32);
+//     day2Low = Math.round(parseInt(allLows[1].innerText) * 1.8 + 32);
+//     day3High = Math.round(parseInt(allHighs[2].innerText) * 1.8 + 32);
+//     day3Low = Math.round(parseInt(allLows[2].innerText) * 1.8 + 32);
+//     day4High = Math.round(parseInt(allHighs[3].innerText) * 1.8 + 32);
+//     day4Low = Math.round(parseInt(allLows[3].innerText) * 1.8 + 32);
+//     // console.log(allHighs[0].innerText,allHighs[1].innerText,allHighs[2].innerText,allHighs[3].innerText);
+//     console.log(`Day 1: ${day1High} / ${day1Low}\nDay 2: ${day2High} / ${day2Low}\nDay 3: ${day3High} / ${day3Low}\nDay 4: ${day4High} / ${day4Low}`);
+// }
+
+// // looking at conversion + writeback
+// var allHighs = document.querySelectorAll(".temp-high");
+// var allLows = document.querySelectorAll(".temp-low");
+// var day1High = 0;
+// var day1Low = 0;
+// var day2High = 0;
+// var day2Low = 0;
+// var day3High = 0;
+// var day3Low = 0;
+// var day4High = 0;
+// var day4Low = 0;
+// function convertTempsToF() { // this seems to work in testing for all days' values (written back only 1 day's worth)
+//     day1High = Math.round(parseInt(allHighs[0].innerText) * 1.8 + 32);
+//     day1Low = Math.round(parseInt(allLows[0].innerText) * 1.8 + 32);
+//     day2High = Math.round(parseInt(allHighs[1].innerText) * 1.8 + 32);
+//     day2Low = Math.round(parseInt(allLows[1].innerText) * 1.8 + 32);
+//     day3High = Math.round(parseInt(allHighs[2].innerText) * 1.8 + 32);
+//     day3Low = Math.round(parseInt(allLows[2].innerText) * 1.8 + 32);
+//     day4High = Math.round(parseInt(allHighs[3].innerText) * 1.8 + 32);
+//     day4Low = Math.round(parseInt(allLows[3].innerText) * 1.8 + 32);
+//     // console.log(allHighs[0].innerText,allHighs[1].innerText,allHighs[2].innerText,allHighs[3].innerText);
+//     console.log(`Day 1: ${day1High} / ${day1Low}\nDay 2: ${day2High} / ${day2Low}\nDay 3: ${day3High} / ${day3Low}\nDay 4: ${day4High} / ${day4Low}`);
+//     // for (var i=0;i<allHighs.length;i++) {
+        
+//     // }
+//     document.getElementById("hi1").innerText = `${day1High}°`;
+//     document.getElementById("lo1").innerText = `${day1Low}°`;
+// }
+
+// looking at conversion + writeback  WORKS - C to F
 var allHighs = document.querySelectorAll(".temp-high");
 var allLows = document.querySelectorAll(".temp-low");
 var day1High = 0;
 var day1Low = 0;
-function convertTempsToF() { // 
+var day2High = 0;
+var day2Low = 0;
+var day3High = 0;
+var day3Low = 0;
+var day4High = 0;
+var day4Low = 0;
+function convertTempsToF() { // this works in testing for all days' values and writes back all
     day1High = Math.round(parseInt(allHighs[0].innerText) * 1.8 + 32);
     day1Low = Math.round(parseInt(allLows[0].innerText) * 1.8 + 32);
+    day2High = Math.round(parseInt(allHighs[1].innerText) * 1.8 + 32);
+    day2Low = Math.round(parseInt(allLows[1].innerText) * 1.8 + 32);
+    day3High = Math.round(parseInt(allHighs[2].innerText) * 1.8 + 32);
+    day3Low = Math.round(parseInt(allLows[2].innerText) * 1.8 + 32);
+    day4High = Math.round(parseInt(allHighs[3].innerText) * 1.8 + 32);
+    day4Low = Math.round(parseInt(allLows[3].innerText) * 1.8 + 32);
     // console.log(allHighs[0].innerText,allHighs[1].innerText,allHighs[2].innerText,allHighs[3].innerText);
-    console.log(day1High,day1Low);
+    console.log(`Day 1: ${day1High} / ${day1Low}\nDay 2: ${day2High} / ${day2Low}\nDay 3: ${day3High} / ${day3Low}\nDay 4: ${day4High} / ${day4Low}`);
+    document.getElementById("hi1").innerText = `${day1High}°`;
+    document.getElementById("lo1").innerText = `${day1Low}°`;
+    document.getElementById("hi2").innerText = `${day2High}°`;
+    document.getElementById("lo2").innerText = `${day2Low}°`;
+    document.getElementById("hi3").innerText = `${day3High}°`;
+    document.getElementById("lo3").innerText = `${day3Low}°`;
+    document.getElementById("hi4").innerText = `${day4High}°`;
+    document.getElementById("lo4").innerText = `${day4Low}°`;
 }
 
+// looking at conversion + writeback  WORKS - F to C
+var allHighs = document.querySelectorAll(".temp-high");
+var allLows = document.querySelectorAll(".temp-low");
+var day1High = 0;
+var day1Low = 0;
+var day2High = 0;
+var day2Low = 0;
+var day3High = 0;
+var day3Low = 0;
+var day4High = 0;
+var day4Low = 0;
+function convertTempsToC() { // this works in testing for all days' values and writes back all
+    day1High = Math.round((parseInt(allHighs[0].innerText) - 32) * 1.8);
+    day1Low = Math.round((parseInt(allLows[0].innerText) - 32) * 1.8);
+    day2High = Math.round((parseInt(allHighs[1].innerText) - 32) * 1.8);
+    day2Low = Math.round((parseInt(allHighs[1].innerText) - 32) * 1.8);
+    day3High = Math.round((parseInt(allHighs[2].innerText)- 32) * 1.8);
+    day3Low = Math.round((parseInt(allHighs[2].innerText) - 32) * 1.8);
+    day4High = Math.round((parseInt(allHighs[3].innerText) - 32) * 1.8);
+    day4Low = Math.round((parseInt(allHighs[3].innerText) - 32) * 1.8);
+    // console.log(allHighs[0].innerText,allHighs[1].innerText,allHighs[2].innerText,allHighs[3].innerText);
+    console.log(`Day 1: ${day1High} / ${day1Low}\nDay 2: ${day2High} / ${day2Low}\nDay 3: ${day3High} / ${day3Low}\nDay 4: ${day4High} / ${day4Low}`);
+    document.getElementById("hi1").innerText = `${day1High}°`;
+    document.getElementById("lo1").innerText = `${day1Low}°`;
+    document.getElementById("hi2").innerText = `${day2High}°`;
+    document.getElementById("lo2").innerText = `${day2Low}°`;
+    document.getElementById("hi3").innerText = `${day3High}°`;
+    document.getElementById("lo3").innerText = `${day3Low}°`;
+    document.getElementById("hi4").innerText = `${day4High}°`;
+    document.getElementById("lo4").innerText = `${day4Low}°`;
+}
+
+
+                // // looking at conversion + writeback using for loop
+                // var allHighs = document.querySelectorAll(".temp-high");
+                // var allLows = document.querySelectorAll(".temp-low");
+                // var day1High = 0;
+                // var day1Low = 0;
+                // var day2High = 0;
+                // var day2Low = 0;
+                // var day3High = 0;
+                // var day3Low = 0;
+                // var day4High = 0;
+                // var day4Low = 0;
+                // function convertTempsToF() { // not quite - revisit)
+                //     day1High = Math.round(parseInt(allHighs[0].innerText) * 1.8 + 32);
+                //     day1Low = Math.round(parseInt(allLows[0].innerText) * 1.8 + 32);
+                //     day2High = Math.round(parseInt(allHighs[1].innerText) * 1.8 + 32);
+                //     day2Low = Math.round(parseInt(allLows[1].innerText) * 1.8 + 32);
+                //     day3High = Math.round(parseInt(allHighs[2].innerText) * 1.8 + 32);
+                //     day3Low = Math.round(parseInt(allLows[2].innerText) * 1.8 + 32);
+                //     day4High = Math.round(parseInt(allHighs[3].innerText) * 1.8 + 32);
+                //     day4Low = Math.round(parseInt(allLows[3].innerText) * 1.8 + 32);
+                //     // console.log(allHighs[0].innerText,allHighs[1].innerText,allHighs[2].innerText,allHighs[3].innerText);
+                //     // console.log(`Day 1: ${day1High} / ${day1Low}\nDay 2: ${day2High} / ${day2Low}\nDay 3: ${day3High} / ${day3Low}\nDay 4: ${day4High} / ${day4Low}`);
+                //     // console.log(allHighs.length);
+                //     for (var i = 0; i <= allHighs.length; i++) {
+                //         var eachDayHi = document.getElementById("hi" + [i]);
+                //         // var eachDayLo = document.getElementById("lo" + [i])
+                //         // document.getElementById("hi" + [i]).innerText = "day" + [i] + "High" + [i] + "°";
+                //         // document.getElementById("lo" + [i]).innerText = "day" + [i] + "Low" + [i] + "°";
+                //         eachDayHi.innerText = "day" + [i] + "High" + "°"; //`${day[i]High}°`;
+                //         // eachDayLo.innerText = "day" + [i] + "Low" + "°";
+                //         console.log(eachDayHi);
+                //     }
+                // }
 
 // plan, using various elements from above
 // if C is selected onchange, get each array index value and return (temp - 32) * 1.8
