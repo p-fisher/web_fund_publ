@@ -77,7 +77,7 @@
    justify-content: space-between;
    /* border: 2px solid cyan; */
    flex: 4;
-   margin: 15px 0;
+   margin: 20px 0;
 }
 .forecast-daily {
    background-color: rgb(227, 227, 227);
