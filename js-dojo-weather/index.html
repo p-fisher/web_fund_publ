@@ -12,7 +12,7 @@
          <div class="navbar">
             <div><h1>DojoWeather</h1></div>
             <div class="cities">
-               <ul>
+               <ul onclick="cityAlert()">
                   <li>Burbank</li>
                   <li>Chicago</li>
                   <li>Dallas</li>
@@ -25,10 +25,10 @@
             <h2>San Jose</h2>
             <div class="selected-city-menu">
                <p>show temperature in</p>
-               <select id="temp-choice">
-                  <option value="°C">°C</option>
-                  <option value="°F">°F</option>
-               </select>
+                  <select id="temp-choice" onchange="convertTempsToF()">
+                     <option id="C" value="°C">°C</option>
+                     <option id="F" value="°F">°F</option>
+                  </select>
             </div>
          </div>
          <!-- <div class="forecast"> -->
@@ -78,8 +78,9 @@
                   <p>We use cookies (sadly, not the edible ones) to personalize content and ads, to provide social media features, and to analyze our traffic. <a href="#">Read more</a></p>
                </div>
             </div>
-            <div><button id="button-accept">I accept</button></div>
+            <div><button id="button-accept" onclick="cookiesHide('cookies-info')">I accept</button></div>
          </div>
             <!-- </div> -->
+            <script src="script.js"></script>
    </body>
 </html>
