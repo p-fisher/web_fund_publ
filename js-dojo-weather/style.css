@@ -1,47 +1,50 @@
-* { /* Universal Reset from Jeff Starr */
-    vertical-align: top;
-    /* font-weight: inherit;
+* {
+   /* Universal Reset from Jeff Starr */
+   vertical-align: top;
+   /* font-weight: inherit;
     font-family: inherit;
     font-style: inherit;
     font-size: 100%; */
-    border: 0 none;
-    outline: 0;
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    }
+   border: 0 none;
+   outline: 0;
+   padding: 0;
+   margin: 0;
+   font-family: sans-serif;
+}
+
+/* top content */
 .topbar {
-    background-color: cornflowerblue;
-    height: 60px;
-    color: white;
+   background-color: cornflowerblue;
+   height: 60px;
+   color: white;
 }
 .navbar {
-    width: 760px;
-    margin: 0 auto;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    /* border: solid 2px gold; */
-    /* padding: 0px; */
+   width: 760px;
+   margin: 0 auto;
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+   /* border: solid 2px gold; */
+   /* padding: 0px; */
 }
 .navbar ul {
-    list-style: none;
-    display: inline-block;
-    margin-left: 30px;
+   list-style: none;
+   display: inline-block;
+   margin-left: 30px;
 }
 .navbar li {
-    float: left;
-    margin-right: 40px;
-    font-size: 130%;
-    font-weight: 600;
+   float: left;
+   margin-right: 40px;
+   font-size: 130%;
+   font-weight: 600;
 }
 .wrapper {
-    width: 760px;
-    margin: 0 auto;
-    height: auto;
-    /* padding: 20px; */
+   width: 760px;
+   margin: 0 auto;
+   height: auto;
+   /* padding: 20px; */
 }
 /* .selected-city-bar {
     display: flex;
@@ -51,23 +54,74 @@
     align-items: center;
 } */
 .selected-city-content {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    border-bottom: solid 2px black;
-    align-items: center;
-    /* align-items: center; */
+   display: flex;
+   justify-content: space-between;
+   height: 60px;
+   border-bottom: solid 2px black;
+   align-items: center;
+   /* align-items: center; */
 }
 .selected-city-menu {
-    width:fit-content;
-    display: flex;
-    line-height: 25px;
-    align-items: center;
+   width: fit-content;
+   display: flex;
+   line-height: 25px;
+   align-items: center;
 }
 #temp-choice {
-    border: 1px solid black;
-    margin-left: 10px;
-    width: 40px;
-    height: 25px;
-    text-align: center;
+   border: 1px solid black;
+   margin-left: 10px;
+   width: 40px;
+   height: 25px;
+   text-align: center;
+}
+
+/* main page-content */
+/* .forecast {
+   display: flex;
+} */
+.forecast-boxes {
+   height: 350px;
+   display: flex;
+   /* background-color: darkgray; */
+   justify-content: space-evenly;
+   border: 2px solid cyan;
+   flex: 4;
+   margin: 15px 0;
+}
+.forecast-daily {
+   background-color: lightgray;
+   display: flex;
+   height: 280px;
+   /* justify-content: space-between; */
+   /* flex: 4; */
+   width: 18%;
+   border: 2px solid rebeccapurple;
+   padding: 10px;
+   /* text-align: center; */
+}
+.cookies-info {
+   position: fixed;
+   background-color: lightgray;
+   border: 2px solid black;
+   padding: 10px;
+   width: 740px;
+   bottom: 15px;
+   display: flex;
+   align-items: center;
+}
+.cookies-text {
+   width: 80%;
+   margin: 0 20px;
+}
+#button-accept {
+   background-color: cornflowerblue;
+   width: 90px;
+   height: 27px;
+   border: 1px solid black;
+   box-shadow: 3px 3px black;
+}
+.weather-icon-round {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
 }
