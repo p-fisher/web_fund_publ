@@ -39,7 +39,7 @@ for (i = 1; i < 13; i++) {
     console.log(i);
     product *= i//product * i;
 }
-console.log("the total product is: " + product)//should be 479001600
+console.log("the total of var 'product' is: " + product)//should be 479001600
 //or
 var product = 1;
 var i = 1;
@@ -48,4 +48,4 @@ while (i < 13) {
     product *= i;
     i++;
 }
-console.log(`the total product is: ${product}`); //note: switching lines 48 and 49 alters result to 6227020800 instead of desired 479001600!
+console.log(`the total of var "product" is: ${product}`); //note: switching lines 48 and 49 alters result to 6227020800 instead of desired 479001600!
