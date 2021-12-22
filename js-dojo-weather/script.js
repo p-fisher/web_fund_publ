@@ -182,8 +182,8 @@ var day1High = 0;
 var day1Low = 0;
 var day2High = 0;
 var day2Low = 0;
-var day3High = 0;
-var day3Low = 0;
+var day3High = 0; // jason suggests declaring these in the function as they're needed!!
+var day3Low = 0;  // also dictionary object for each day wwithj a key that is high and low for each and use foreach
 var day4High = 0;
 var day4Low = 0;
 function convertTempsToC() { // this works in testing for all days' values and writes back all
@@ -211,15 +211,16 @@ function convertTempsToC() { // this works in testing for all days' values and w
                 // // looking at conversion + writeback using for loop
                 // var allHighs = document.querySelectorAll(".temp-high");
                 // var allLows = document.querySelectorAll(".temp-low");
-                // var day1High = 0;
-                // var day1Low = 0;
-                // var day2High = 0;
-                // var day2Low = 0;
-                // var day3High = 0;
-                // var day3Low = 0;
-                // var day4High = 0;
-                // var day4Low = 0;
+                // var day1High = 0; //unneded when utilizing array
+                // var day1Low = 0; //unneded when utilizing array
+                // var day2High = 0; //unneded when utilizing array
+                // var day2Low = 0; //unneded when utilizing array
+                // var day3High = 0; //unneded when utilizing array
+                // var day3Low = 0; //unneded when utilizing array
+                // var day4High = 0; //unneded when utilizing array
+                // var day4Low = 0; //unneded when utilizing array
                 // function convertTempsToF() { // not quite - revisit)
+                // allHighs[i] = Math.round(parseInt(allHighs[i].innerText) * 1.8 + 32) //JB suggested
                 //     day1High = Math.round(parseInt(allHighs[0].innerText) * 1.8 + 32);
                 //     day1Low = Math.round(parseInt(allLows[0].innerText) * 1.8 + 32);
                 //     day2High = Math.round(parseInt(allHighs[1].innerText) * 1.8 + 32);
@@ -232,7 +233,7 @@ function convertTempsToC() { // this works in testing for all days' values and w
                 //     // console.log(`Day 1: ${day1High} / ${day1Low}\nDay 2: ${day2High} / ${day2Low}\nDay 3: ${day3High} / ${day3Low}\nDay 4: ${day4High} / ${day4Low}`);
                 //     // console.log(allHighs.length);
                 //     for (var i = 0; i <= allHighs.length; i++) {
-                //         var eachDayHi = document.getElementById("hi" + [i]);
+                //         var eachDayHi = document.getElementById("hi" + [i]); //JB use the loop to navigate the array
                 //         // var eachDayLo = document.getElementById("lo" + [i])
                 //         // document.getElementById("hi" + [i]).innerText = "day" + [i] + "High" + [i] + "°";
                 //         // document.getElementById("lo" + [i]).innerText = "day" + [i] + "Low" + [i] + "°";
