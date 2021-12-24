@@ -80,9 +80,19 @@ console.log(result); // we expect back ["e", "d", "c", "b", "a"]
 function fibonacciArray(n) {
    // the [0, 1] are the starting values of the array to calculate the rest from
    var fibArr = [0, 1];
-   // your code here
+   var posn1 = 0;
+   var posn2 = 1;
+   // var nextNum = 0;
+   for (i = 2; i < n; i++) {
+      var nextNum = fibArr[posn1] + fibArr[posn2];
+      fibArr.push(nextNum);
+      // console.log(`value posn1: ${fibArr[posn1]}, value posn2: ${fibArr[posn2]}`);
+      posn1++;
+      posn2++;
+      // console.log(fibArr);
+   }
    return fibArr;
 }
-  
+
 var result = fibonacciArray(10);
 console.log(result); // we expect back [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
