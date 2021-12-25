@@ -48,7 +48,7 @@ function randomPizza(crust,style,cheese,toppings) {
     return pizza;
 }
 
-var randoPizza = randomPizza("thin","pesto","mozzarella",toppings);
+var randoPizza = randomPizza("thin","pesto","mozzarella");
 console.log(randoPizza);
 
 // Math.random([crust])   Math.random([style])  Math.random([cheese])  Math.random([toppings])
