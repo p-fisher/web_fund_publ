@@ -45,7 +45,7 @@ function topNumPicker(arr) {
 // var cheese = ["mozzarella","feta","cheddar","blue cheese","non-dairy"];
 
 function randomPizza(crust,style,cheese,toppings) {
-    var toppings = ["beef","pepperoni","anchovies","chicken","sppinach","black olives","tomatoes","sun-dried tomatoes","bell pepper","banana pepper","onion"];
+    var toppings = ["beef","pepperoni","anchovies","chicken","spinach","black olives","tomatoes","sun-dried tomatoes","bell pepper","banana pepper","onion"];
     var pizza = {};
     pizza.crust = crust;//Math.floor(Math.random() * crust.length);
     pizza.style = style;//Math.floor(Math.random() * style.length);
